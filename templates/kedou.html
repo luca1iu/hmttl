@@ -9,133 +9,33 @@
         <div class="video">
             <h3 class="title">舞台</h3>
             <ul class="list">
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1RW411a7ox?spm_id_from=333.337.search-card.all.click&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=16906640&bvid=BV1RW411a7ox&cid=27642241&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/没有明天.jpeg">
-                            <p class="t">没有明天</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1sx41187BX/?spm_id_from=333.788.recommend_more_video.1&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=13883094&bvid=BV1sx41187BX&cid=22717884&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/青涩的香蕉.jpeg">
-                            <p class="t">青涩的香蕉</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV16W411v74q/?spm_id_from=333.788.recommend_more_video.-1&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=18459039&bvid=BV16W411v74q&cid=30123178&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/她和她.jpeg">
-                            <p class="t">她和她</p>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1iW411i7kE?spm_id_from=333.999.0.0&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=18146027&bvid=BV1iW411i7kE&cid=29625328&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/天使的圈套.jpeg">
-                            <p class="t">天使的圈套</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1UW411P71h/?spm_id_from=333.788.recommend_more_video.4&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=24202521&bvid=BV1UW411P71h&cid=40572915&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/havana.png">
-                            <p class="t">HAVANA</p>
-                        </div>
-                    </a>
-                </li>
+                {% for i in range(kedou_wutai_n) %}
+                    <li>
+                        <a class="item video"
+                           href={{ kedou_wutai['links'][i] }}
+                                   id={{ kedou_wutai['ids'][i] }} target="_blank">
+                            <div class="img-cover">
+                                <img src="{{ url_for('static',filename='data/'+ kedou_wutai['images'][i] ) }}">
+                                <p class="t">{{ kedou_wutai['titles'][i] }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
             <h3 class="title">经典名场面</h3>
             <ul class="list">
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1ix411h7yo?spm_id_from=333.337.search-card.all.click&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=11496186&bvid=BV1ix411h7yo&cid=19006598&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/真的是甜到忧伤的直播高甜糖.jpg">
-                            <p class="t">真的是甜到忧伤的直播高甜糖</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1dA411v7ZE?spm_id_from=333.337.search-card.all.click&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=328558337&bvid=BV1dA411v7ZE&cid=205235857&page=1" target="_blank">
-                        <div class="img-cover">
-                            <img src="data/磕到头昏！与呆萌女朋友吃鸡翻车（字幕版）.jpg">
-                            <p class="t">磕到头昏！与呆萌女朋友吃鸡翻车</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1EW411Z7Eu?spm_id_from=333.337.search-card.all.click&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=31064590&bvid=BV1EW411Z7Eu&cid=54252054&page=1" target="_blank">
-                        <div>
-                            <img src="data/“之后我们也会有很多，对吗”“对”.jpg">
-                            <p class="t">"之后我们也会有很多，对吗" "对"</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1q54y1773X/?spm_id_from=333.788.recommend_more_video.0&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=847093362&bvid=BV1q54y1773X&cid=382949366&page=1" target="_self">
-                        <div>
-                            <img src="data/点击就看%20拐%20瑶%20亲%20亲（有声版*з*.jpg">
-                            <p class="t">点击就看 拐 瑶 亲 亲（有声版*з*</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1fx41147Ui/?spm_id_from=333.788.recommend_more_video.6&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=13898678&bvid=BV1fx41147Ui&cid=22845772&page=1" target="_blank">
-                        <div>
-                            <img src="data/2017七夕高甜合集.png">
-                            <p class="t">2017七夕高甜合集</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <ul class="list">
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1vp411d7cN/?spm_id_from=333.788.recommend_more_video.21&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=23607052&bvid=BV1vp411d7cN&cid=39411658&page=1" target="_blank">
-                        <div>
-                            <img src="data/蒋舒婷：她们不是朋友？在一起难道他们之间有问题.jpeg">
-                            <p class="t">蒋舒婷：她们不是朋友？</p>
-                            <p class="t">在一起难道他们之间有问题</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item video"
-                       href="https://www.bilibili.com/video/BV1DW411P7oA/?spm_id_from=333.788.recommend_more_video.-1&vd_source=839bc14eaf9a2884290a60d3529f16c6"
-                       id="aid=24203958&bvid=BV1DW411P7oA&cid=40574461&page=1" target="_blank">
-                        <div>
-                            <img src="data/蒋舒婷%20黑喵才是天注定.jpg">
-                            <p class="t">蒋舒婷 黑喵才是天注定</p>
-                        </div>
-                    </a>
-                </li>
+                {% for x in range(kedou_mcm_n) %}
+                    <li>
+                        <a class="item video"
+                           href={{ kedou_mcm['links'][x] }}
+                           id={{ kedou_mcm['ids'][x] }} target="_blank">
+                            <div class="img-cover">
+                                <img src="{{ url_for('static',filename='data/'+ kedou_mcm['images'][x] ) }}">
+                                <p class="t">{{ kedou_mcm['titles'][x] }}</p>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
