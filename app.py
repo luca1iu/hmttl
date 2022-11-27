@@ -17,7 +17,17 @@ def kedou():
 def BEfunnyman():
     return render_template('BEfunnyman.html')
 
+@app.route('/bigcandy')
+def bigcandy():
+    return render_template('bigcandy.html')
 
+@app.route('/jianlaji')
+def jianlaji():
+    return render_template('jianlaji.html')
+
+@app.route('/talkroom')
+def talkroom():
+    return render_template('talkroom.html')
 
 if __name__ == '__main__':
     app.debug = True
