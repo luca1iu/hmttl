@@ -1,0 +1,172 @@
+p, ul, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    height: 100%;
+    min-width: 1500px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-family: '微软雅黑', 'Nanum Gothic', 'simsun', 'dotum', 'AppleGothic', 'arial', 'Helvetica', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex: 1;
+    background: #f0f2f4;
+}
+
+.main-container.black {
+    background: #191919;
+}
+
+@media (max-width: 640px) {
+    body {
+        /* min-width: fit-content; */
+        min-width: auto;
+    }
+
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .min-height-500 {
+        min-height: 500px;
+    }
+
+    .min-height-800 {
+        min-height: 800px;
+    }
+
+    footer {
+        display: none;
+        padding: 30px 10px;
+    }
+}
+
+/* scroll */
+@media (max-width: 640px) {
+    .visualbg-cover {
+        margin-top: 0;
+        height: 180px;
+    }
+
+    .title-scroll {
+        margin-top: 0;
+    }
+
+    .title-scroll h2 {
+        padding: 50px 20px;
+        font-size: 32px;
+    }
+
+    .title-static {
+        margin-top: 0;
+        padding: 100px 0 50px 20px;
+        font-size: 32px;
+    }
+
+    .title-static.black {
+        background: #191919;
+    }
+
+    .title-none {
+        margin-top: 0;
+        display: none;
+    }
+}
+
+.title-scroll {
+    position: relative;
+    margin-top: -100px;
+    z-index: 2;
+}
+
+.title-scroll h2 {
+    padding: 50px 0;
+    text-align: right;
+    font-size: 46px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+
+footer {
+    padding: 50px 0 40px;
+    background: #f0f2f4;
+    text-align: center;
+}
+
+footer.black {
+    background: #191919;
+}
+
+footer .links {
+    margin-left: -10px;
+    margin-bottom: 10px;
+}
+
+footer .links a {
+    display: inline-block;
+    padding: 0 10px 10px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #000;
+}
+
+/* 分割线 */
+
+footer .links span, footer .beian span {
+    margin: 0 10px;
+    font-size: 10px;
+    color: #525252;
+}
+
+footer .meta {
+    font-size: 12px;
+    font-weight: 500;
+    color: #525252;
+}
+
+footer .beian a {
+    font-size: 10px;
+    color: #525252;
+}
+
+footer.black .links a, footer.black .links span, footer.black .meta, footer.black .beian a {
+    color: #fff;
+}
+
+footer .beian {
+    margin-top: 8px;
+}
